@@ -1,0 +1,105 @@
+Traceback (most recent call last):
+  File "main_dlg.pyo", line 228, in on_bn_sendlocal_clicked
+UnicodeEncodeError: 'ascii' codec can't encode character u'\uff0c' in position 19: ordinal not in range(128)
+Traceback (most recent call last):
+  File "main_dlg.pyo", line 228, in on_bn_sendlocal_clicked
+UnicodeEncodeError: 'ascii' codec can't encode character u'\uff0c' in position 19: ordinal not in range(128)
+Traceback (most recent call last):
+  File "main_dlg.pyo", line 228, in on_bn_sendlocal_clicked
+UnicodeEncodeError: 'ascii' codec can't encode character u'\uff0c' in position 10: ordinal not in range(128)
+Traceback (most recent call last):
+  File "main_dlg.pyo", line 228, in on_bn_sendlocal_clicked
+UnicodeEncodeError: 'ascii' codec can't encode character u'\uff0c' in position 9: ordinal not in range(128)
+Traceback (most recent call last):
+  File "main_dlg.pyo", line 228, in on_bn_sendlocal_clicked
+UnicodeEncodeError: 'ascii' codec can't encode character u'\uff0c' in position 9: ordinal not in range(128)
+Traceback (most recent call last):
+  File "main_dlg.pyo", line 228, in on_bn_sendlocal_clicked
+UnicodeEncodeError: 'ascii' codec can't encode character u'\uff0c' in position 9: ordinal not in range(128)
+Traceback (most recent call last):
+  File "main_dlg.pyo", line 228, in on_bn_sendlocal_clicked
+UnicodeEncodeError: 'ascii' codec can't encode character u'\uff0c' in position 9: ordinal not in range(128)
+Traceback (most recent call last):
+  File "main_dlg.pyo", line 228, in on_bn_sendlocal_clicked
+UnicodeEncodeError: 'ascii' codec can't encode character u'\uff0c' in position 9: ordinal not in range(128)
+Traceback (most recent call last):
+  File "main_dlg.pyo", line 228, in on_bn_sendlocal_clicked
+UnicodeEncodeError: 'ascii' codec can't encode character u'\uff0c' in position 9: ordinal not in range(128)
+Traceback (most recent call last):
+  File "main_dlg.pyo", line 228, in on_bn_sendlocal_clicked
+UnicodeEncodeError: 'ascii' codec can't encode character u'\uff0c' in position 9: ordinal not in range(128)
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "threading.pyo", line 530, in __bootstrap_inner
+  File "threading.pyo", line 483, in run
+  File "dtugprs.py", line 100, in reader
+  File "serial\serialwin32.pyo", line 218, in read
+SerialException: call to ClearCommError failed
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "threading.pyo", line 530, in __bootstrap_inner
+  File "threading.pyo", line 483, in run
+  File "dtugprs.py", line 100, in reader
+  File "serial\serialwin32.pyo", line 218, in read
+SerialException: call to ClearCommError failed
+
+Traceback (most recent call last):
+  File "main_dlg.pyo", line 1109, in read_at_display
+IndexError: string index out of range
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "threading.pyo", line 530, in __bootstrap_inner
+  File "threading.pyo", line 483, in run
+  File "dtugprs.py", line 100, in reader
+  File "serial\serialwin32.pyo", line 218, in read
+SerialException: call to ClearCommError failed
+
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "threading.pyo", line 530, in __bootstrap_inner
+  File "threading.pyo", line 483, in run
+  File "dtugprs.py", line 166, in writer
+  File "serial\serialwin32.pyo", line 255, in write
+SerialException: WriteFile failed ([Error 5] ¾Ü¾ø·ÃÎÊ¡£)
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "threading.pyo", line 530, in __bootstrap_inner
+  File "threading.pyo", line 483, in run
+  File "dtugprs.py", line 100, in reader
+  File "serial\serialwin32.pyo", line 218, in read
+SerialException: call to ClearCommError failed
+
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "threading.pyo", line 530, in __bootstrap_inner
+  File "threading.pyo", line 483, in run
+  File "dtugprs.py", line 166, in writer
+  File "serial\serialwin32.pyo", line 255, in write
+SerialException: WriteFile failed ([Error 5] ¾Ü¾ø·ÃÎÊ¡£)
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "threading.pyo", line 530, in __bootstrap_inner
+  File "threading.pyo", line 483, in run
+  File "dtugprs.py", line 100, in reader
+  File "serial\serialwin32.pyo", line 218, in read
+SerialException: call to ClearCommError failed
+
+Exception in thread guithread-20130608142543.640000:
+Traceback (most recent call last):
+  File "threading.pyo", line 530, in __bootstrap_inner
+  File "threading.pyo", line 483, in run
+  File "dtugprs.py", line 630, in guiMainThread
+  File "genericpath.pyo", line 49, in getsize
+WindowsError: [Error 2] : 'hdstand.dyn'
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "threading.pyo", line 530, in __bootstrap_inner
+  File "threading.pyo", line 483, in run
+  File "dtugprs.py", line 100, in reader
+  File "serial\serialwin32.pyo", line 236, in read
+SerialException: ReadFile failed ([Error 6] ¾ä±úÎÞÐ§¡£)
+

@@ -1,0 +1,442 @@
+[LWCVI Language Resource File]
+Version = 102
+Magic = -1395807027
+
+[PANEL]
+Flags = "@f"
+Title = "Comway DTU Configuration"
+
+[PANEL_TEXTBOX_AT]
+Type = 3
+Flags = "Dee"
+
+[PANEL_TAB]
+Type = 11
+NumTabLabels = 7
+Flags = "EfffEfff@f"
+TabLabel_0 = "GPRS Config"
+TabLabel_1 = "SMS Config"
+TabLabel_2 = "Main config"
+TabLabel_3 = "Conserve Energy"
+TabLabel_4 = "RTC Config"
+TabLabel_5 = "UART Config"
+TabLabel_6 = "Test"
+
+[PANEL_DECORATION]
+Type = 1
+
+[PANEL_RING_BAUD]
+Type = 8
+NumItemLabels = 7
+NumItemValues = 0
+Flags = "EfeeEeeeDee"
+Label = "BAUD:"
+
+[PANEL_RING_COM]
+Type = 8
+NumItemLabels = 9
+NumItemValues = 0
+Flags = "EfeeEeeeEeee@e"
+Label = "COM:"
+
+[PANEL_TEXTMSG]
+Type = 4
+Flags = "@f"
+Default = "Serial config"
+
+[PANEL_COMM_READ_CONFIG_2]
+Type = 2
+Flags = "@f"
+Label = "Quit"
+
+[PANEL_COMM_READ_CONFIG_3]
+Type = 2
+Flags = "@f"
+Label = "Save as"
+
+[PANEL_COMM_READ_CONFIG]
+Type = 2
+Flags = "@f"
+Label = "Read file"
+
+[PANEL_COMM_READ_MODULE]
+Type = 2
+Flags = "@f"
+Label = "Read Config"
+
+[PANEL_COMM_SAVE_ALL]
+Type = 2
+Flags = "@f"
+Label = "Save All"
+
+[PANEL_COMM_SAVE_CHANGE]
+Type = 2
+Flags = "@f"
+Label = "Save Change"
+
+[PANEL_COMMANDBUTTON]
+Type = 2
+Flags = "@f"
+Label = "Mass Config"
+
+[PANEL_TIMER]
+Type = 2
+Flags = "@e"
+
+[PANEL_TEXTMSG_2]
+Type = 4
+Flags = "@f"
+Default = "UART default:\n115200,8bit,1stop\nnone,pls use the\nMass Config for\ndiff config"
+
+[PANEL_CHECKBOX]
+Type = 2
+Flags = "@f"
+Label = "auto reset after config"
+
+[PANEL_RING]
+Type = 8
+NumItemLabels = 5
+NumItemValues = 0
+Flags = "EfeeEeee"
+Label = "operator"
+
+[PANEL_RING_2]
+Type = 8
+NumItemLabels = 0
+NumItemValues = 0
+Flags = "@f"
+Label = "AT"
+
+[PANEL_CHECKBOX_2]
+Type = 2
+Flags = "@f"
+Label = "Test AT"
+
+[TABPANEL]
+Flags = "@e"
+
+[TABPANEL_RING_SERVER_SELECT]
+Type = 8
+NumItemLabels = 2
+NumItemValues = 0
+Flags = "Eeff"
+ItemLabel_0 = "Main Server"
+ItemLabel_1 = "BAK Server"
+
+[TABPANEL_STRING_SERVER]
+Type = 3
+Flags = "Dfe"
+Label = "Server:"
+
+[TABPANEL_NUMERIC_PORT]
+Type = 2
+Flags = "@f"
+Label = "Port:"
+
+[TABPANEL_RADIO_ONE_CONNECT]
+Type = 2
+Flags = "@f"
+Label = "Delay Mode"
+
+[TABPANEL_RADIO_AUTO_CONNECT]
+Type = 2
+Flags = "@f"
+Label = "Auto Mode"
+
+[TABPANEL_CHECK_HEART]
+Type = 2
+Flags = "@f"
+Label = "Heartbeat Mode"
+
+[TABPANEL_NUMERIC_CONNECT_DELAY]
+Type = 2
+Flags = "@f"
+Label = "Delay Time:"
+
+[TABPANEL_NUMERIC_HEART_TIME]
+Type = 2
+Flags = "@f"
+Label = "Heartbeat Timeout:"
+
+[TABPANEL_TEXTMSG_2]
+Type = 4
+Flags = "@f"
+Default = "SEC(0 for Manual Connection)"
+
+[TABPANEL_TEXTMSG]
+Type = 4
+Flags = "@f"
+Default = "SEC"
+
+[TABPANEL_STRING_HERAT_DATA]
+Type = 3
+Flags = "Dfe"
+Label = "Heartbeat Packet:"
+
+[TABPANEL_2]
+Flags = "@e"
+
+[TABPANEL_2_CHECK_SMS_OUTPUT]
+Type = 2
+Flags = "@f"
+Label = "print SMS on UART"
+
+[TABPANEL_2_CHECK_SMS_ALARM]
+Type = 2
+Flags = "@f"
+Label = "SMS Alarm"
+
+[TABPANEL_2_STRING_SMS_ALARM_NUMB]
+Type = 3
+Flags = "Dfe"
+Label = "Alarm Center Tel Num:"
+
+[TABPANEL_2_RING_ALARM_LEVEL]
+Type = 8
+NumItemLabels = 2
+NumItemValues = 0
+Flags = "Efee"
+Label = "Alarm trigger Level"
+
+[TABPANEL_2_RING_ALARM_PIN]
+Type = 8
+NumItemLabels = 2
+NumItemValues = 0
+Flags = "Efee"
+Label = "Alarm trigger Pin:"
+
+[TABPANEL_2_TEXTBOX_SMS_ALARM_CON]
+Type = 3
+Flags = "Dfe"
+Label = "Alarm msg:"
+
+[TABPANEL_2_DECORATION]
+Type = 1
+
+[TABPANEL_2_DECORATION_2]
+Type = 1
+
+[TABPANEL_3]
+Flags = "@e"
+
+[TABPANEL_3_CHECK_PACKET_MODE_2]
+Type = 2
+Flags = "@f"
+Label = "Transmit transparently"
+
+[TABPANEL_3_CHECK_PACKET_MODE]
+Type = 2
+Flags = "@f"
+Label = "packet communication"
+
+[TABPANEL_3_STRING_CALLCENTER]
+Type = 3
+Flags = "Dfe"
+Label = "Call center Tel Num:"
+
+[TABPANEL_3_STRING_DTU_ID]
+Type = 3
+Flags = "Dfe"
+Label = "ID code"
+
+[TABPANEL_3_STRING_DTU_NUMBER]
+Type = 3
+Flags = "Dfe"
+Label = "DTU Tel Num"
+
+[TABPANEL_3_NUMERIC]
+Type = 2
+Flags = "@f"
+Label = "Auto increase in Mass"
+
+[TABPANEL_7]
+Flags = "@e"
+
+[TABPANEL_7_CHECKBOX_3]
+Type = 2
+Flags = "@f"
+Label = "Power Down ,Timing Start,standby current 20uA"
+
+[TABPANEL_7_CHECKBOX_2]
+Type = 2
+Flags = "@f"
+Label = "SP mode,UART Power Down ,standby current 10mA"
+
+[TABPANEL_7_CHECKBOX]
+Type = 2
+Flags = "@f"
+Label = "Power on,standby current 30mA"
+
+[TABPANEL_7_NUMERIC]
+Type = 2
+Flags = "@f"
+Label = "min"
+
+[TABPANEL_7_TEXTMSG]
+Type = 4
+Flags = "@f"
+Default = "per"
+
+[TABPANEL_7_TEXTMSG_2]
+Type = 4
+Flags = "@f"
+Default = "check in"
+
+[TABPANEL_6]
+Flags = "@e"
+
+[TABPANEL_6_CHECK_PACKET_MODE]
+Type = 2
+Flags = "@f"
+Label = "enable RTC"
+
+[TABPANEL_6_RADIOBUTTON_3]
+Type = 2
+Flags = "@f"
+Label = "weekly"
+
+[TABPANEL_6_RADIOBUTTON_2]
+Type = 2
+Flags = "@f"
+Label = "dayly"
+
+[TABPANEL_6_RADIOBUTTON]
+Type = 2
+Flags = "@f"
+Label = "Single entry"
+
+[TABPANEL_6_NUMERIC_6]
+Type = 2
+Flags = "@f"
+Label = "SEC"
+
+[TABPANEL_6_NUMERIC_5]
+Type = 2
+Flags = "@f"
+Label = "min"
+
+[TABPANEL_6_NUMERIC_4]
+Type = 2
+Flags = "@f"
+Label = "H"
+
+[TABPANEL_6_NUMERIC_3]
+Type = 2
+Flags = "@f"
+Label = "D"
+
+[TABPANEL_6_NUMERIC_2]
+Type = 2
+Flags = "@f"
+Label = "Mon"
+
+[TABPANEL_6_NUMERIC]
+Type = 2
+Flags = "@f"
+Label = "Y"
+
+[TABPANEL_6_RING]
+Type = 8
+NumItemLabels = 3
+NumItemValues = 0
+Flags = "Efff@f"
+Label = "Task"
+ItemLabel_0 = "GPRS data"
+ItemLabel_1 = "SMS data"
+ItemLabel_2 = "Call voice"
+
+[TABPANEL_6_STRING]
+Type = 3
+Flags = "Dfe"
+Label = "Data"
+
+[TABPANEL_4]
+Flags = "@e"
+
+[TABPANEL_4_RING_BAUD_CHANGE_4]
+Type = 8
+NumItemLabels = 3
+NumItemValues = 0
+Flags = "Efee@e"
+Label = "Stop"
+
+[TABPANEL_4_RING_BAUD_CHANGE_3]
+Type = 8
+NumItemLabels = 4
+NumItemValues = 0
+Flags = "EfeeDee"
+Label = "Data"
+
+[TABPANEL_4_RING_BAUD_CHANGE_2]
+Type = 8
+NumItemLabels = 4
+NumItemValues = 0
+Flags = "EfffDff"
+Label = "Verify"
+ItemLabel_0 = "None"
+ItemLabel_1 = "odd"
+ItemLabel_2 = "even"
+ItemLabel_3 = "space"
+
+[TABPANEL_4_RING_BAUD_CHANGE]
+Type = 8
+NumItemLabels = 11
+NumItemValues = 0
+Flags = "EfeeEeeeEeeeEeee"
+Label = "Baud"
+
+[TABPANEL_5]
+Flags = "@e"
+
+[TABPANEL_5_COMMANDBUTTON_READB_3]
+Type = 2
+Flags = "@f"
+Label = "Send SMS"
+
+[TABPANEL_5_COMMANDBUTTON_READB_2]
+Type = 2
+Flags = "@f"
+Label = "Setup"
+
+[TABPANEL_5_COMMANDBUTTON_READB_5]
+Type = 2
+Flags = "@f"
+Label = "flush output"
+
+[TABPANEL_5_COMMANDBUTTON_READB_4]
+Type = 2
+Flags = "@e"
+
+[TABPANEL_5_COMMANDBUTTON_READBAR]
+Type = 2
+Flags = "@f"
+Label = "read"
+
+[TABPANEL_5_STRING_BARCODE]
+Type = 3
+Flags = "Dee"
+
+[TABPANEL_5_RADIOBUTTON_SAVE]
+Type = 2
+Flags = "@f"
+Label = "en after rst"
+
+[TABPANEL_5_BINARYSWITCH_2]
+Type = 5
+Flags = "Efee"
+Label = "DTU debug msg"
+
+[TABPANEL_5_STRING_AT]
+Type = 3
+Flags = "Dee"
+
+[TABPANEL_5_STRING_MSG_CONTENTS]
+Type = 3
+Flags = "Dfe"
+Label = "context:"
+
+[TABPANEL_5_STRING_MSG_NUMBER]
+Type = 3
+Flags = "Dfe"
+Label = "Tel Num:"
+

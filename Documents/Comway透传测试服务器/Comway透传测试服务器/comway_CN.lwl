@@ -1,0 +1,57 @@
+[LWCVI Language Resource File]
+Version = 102
+Magic = -1395807027
+
+[PANEL]
+Flags = "@f"
+Title = "TCP测试服务器 北京天同诚业科技有限公司"
+
+[PANEL_CLIENT_LIST]
+Type = 8
+NumItemLabels = 0
+NumItemValues = 0
+Flags = "@f"
+Label = "选择客户端:"
+
+[PANEL_SEND]
+Type = 2
+Flags = "@f"
+Label = "发送"
+
+[PANEL_DISCONNECT]
+Type = 2
+Flags = "@f"
+Label = "断开连接"
+
+[PANEL_DATA]
+Type = 3
+Flags = "Dfe"
+Label = "待发数据:"
+
+[PANEL_NUMERIC]
+Type = 2
+Flags = "@f"
+Label = "TCP端口号"
+
+[PANEL_TEXTMSG]
+Type = 4
+Flags = "@e"
+
+[PANEL_PICTUREBUTTON]
+Type = 2
+Flags = "@e"
+
+[REC_PANEL]
+Flags = "@f"
+Title = "客户端信息"
+
+[REC_PANEL_CLIENT_NAME]
+Type = 3
+Flags = "Dfe"
+Label = "客户端名称"
+
+[REC_PANEL_DATA]
+Type = 3
+Flags = "Dfe"
+Label = "收到数据："
+
