@@ -13,13 +13,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadLamps.Client", "RoadLam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadLamps.Testing", "RoadLamps.Testing\RoadLamps.Testing.csproj", "{AE1514F0-76C5-4A6D-A24C-544A07B47104}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadLamps.Web", "RoadLamps.Web\RoadLamps.Web.csproj", "{2F0EF214-D46B-4BC5-B909-71150AA9CF99}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadLamps.Winform", "RoadLamps.Winform\RoadLamps.Winform.csproj", "{B66184F2-EDF1-4883-9BD4-7948F4E79CDF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadLamps.Service.Old", "RoadLamps.Service.Old\RoadLamps.Service.Old.csproj", "{4745DAE8-A8CA-4583-BFBD-482013BDEFD9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadLamps.Service", "RoadLamps.Service\RoadLamps.Service.csproj", "{D1E4D714-A9CE-46DB-B440-BA6C8B8D6E3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadLamps.Web", "RoadLamps.Web\RoadLamps.Web.csproj", "{B8B009D2-3BFE-4A79-8047-651ACD465346}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,10 +51,6 @@ Global
 		{AE1514F0-76C5-4A6D-A24C-544A07B47104}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE1514F0-76C5-4A6D-A24C-544A07B47104}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE1514F0-76C5-4A6D-A24C-544A07B47104}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2F0EF214-D46B-4BC5-B909-71150AA9CF99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F0EF214-D46B-4BC5-B909-71150AA9CF99}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F0EF214-D46B-4BC5-B909-71150AA9CF99}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F0EF214-D46B-4BC5-B909-71150AA9CF99}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B66184F2-EDF1-4883-9BD4-7948F4E79CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B66184F2-EDF1-4883-9BD4-7948F4E79CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B66184F2-EDF1-4883-9BD4-7948F4E79CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -67,6 +63,10 @@ Global
 		{D1E4D714-A9CE-46DB-B440-BA6C8B8D6E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1E4D714-A9CE-46DB-B440-BA6C8B8D6E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1E4D714-A9CE-46DB-B440-BA6C8B8D6E3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8B009D2-3BFE-4A79-8047-651ACD465346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8B009D2-3BFE-4A79-8047-651ACD465346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8B009D2-3BFE-4A79-8047-651ACD465346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8B009D2-3BFE-4A79-8047-651ACD465346}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -28,10 +28,5 @@ namespace RoadLamps.Web.Controllers
 
             return View();
         }
-
-        public string TestCallWcfService() {
-            
-            return "hahhaha";
-        }
     }
 }

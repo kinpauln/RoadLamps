@@ -12,6 +12,7 @@ using System.Threading;
 using System.Diagnostics;
 using System.IO;
 using RoadLamps.Service;
+using System.Net.Sockets;
 
 namespace RoadLamps
 {
@@ -20,10 +21,10 @@ namespace RoadLamps
         public Form1()
         {
             InitializeComponent();
-            EquipmentService.DisplayPanel = this.listView1;
-            EquipmentService.synContext = SynchronizationContext.Current;
-            _servicehost = new ServiceHost(typeof(EquipmentService));
-            this._servicehost.Open();
+            //EquipmentService.DisplayPanel = this.listView1;
+            //EquipmentService.synContext = SynchronizationContext.Current;
+            //_servicehost = new ServiceHost(typeof(EquipmentService));
+            //this._servicehost.Open();
         }
         private ServiceHost _servicehost = null;
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
@@ -155,6 +156,24 @@ namespace RoadLamps
                 Console.WriteLine(e);
             }
             return output;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TcpClient tcp = new TcpClient();
+
+            string hostname = "kinpauln.oicp.net";
+
+            tcp.Connect(hostname, 9000);//根据服务器的IP地址和侦听的端口连接
+
+            if (tcp.Connected)
+            {
+
+                //连接成功的消息机制  详细见DEMO
+
+                MessageBox.Show("成功连接上了服务器：" + hostname);
+
+            }
         }
     }
 }
