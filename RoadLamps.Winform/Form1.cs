@@ -13,6 +13,7 @@ using System.Diagnostics;
 using System.IO;
 using RoadLamps.Service;
 using System.Net.Sockets;
+using RoadLamps.Winform;
 
 namespace RoadLamps
 {
@@ -160,20 +161,23 @@ namespace RoadLamps
 
         private void button2_Click(object sender, EventArgs e)
         {
-            TcpClient tcp = new TcpClient();
+            //TcpClient tcp = new TcpClient();
 
-            string hostname = "kinpauln.oicp.net";
+            //string hostname = "kinpauln.oicp.net";
 
-            tcp.Connect(hostname, 9000);//根据服务器的IP地址和侦听的端口连接
+            //tcp.Connect(hostname, 9000);//根据服务器的IP地址和侦听的端口连接
 
-            if (tcp.Connected)
-            {
+            //if (tcp.Connected)
+            //{
 
-                //连接成功的消息机制  详细见DEMO
+            //    //连接成功的消息机制  详细见DEMO
 
-                MessageBox.Show("成功连接上了服务器：" + hostname);
+            //    MessageBox.Show("成功连接上了服务器：" + hostname);
 
-            }
+            //}
+
+            TcpServer ts = new TcpServer();
+            ts.StartServer();
         }
     }
 }

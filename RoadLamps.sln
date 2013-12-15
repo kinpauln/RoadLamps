@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadLamps.Service", "RoadLa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadLamps.Web", "RoadLamps.Web\RoadLamps.Web.csproj", "{B8B009D2-3BFE-4A79-8047-651ACD465346}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadLamps.Testing.Server", "RoadLamps.Testing.Server\RoadLamps.Testing.Server.csproj", "{5F0E16A4-90E0-4825-BC40-224BAFD2C747}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadLamps.Testing.Client", "RoadLamps.Testing.Client\RoadLamps.Testing.Client.csproj", "{0E3DE824-4FBB-4324-8AA0-1C62BFAB2ACB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +71,14 @@ Global
 		{B8B009D2-3BFE-4A79-8047-651ACD465346}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8B009D2-3BFE-4A79-8047-651ACD465346}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8B009D2-3BFE-4A79-8047-651ACD465346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F0E16A4-90E0-4825-BC40-224BAFD2C747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F0E16A4-90E0-4825-BC40-224BAFD2C747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F0E16A4-90E0-4825-BC40-224BAFD2C747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F0E16A4-90E0-4825-BC40-224BAFD2C747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E3DE824-4FBB-4324-8AA0-1C62BFAB2ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E3DE824-4FBB-4324-8AA0-1C62BFAB2ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E3DE824-4FBB-4324-8AA0-1C62BFAB2ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E3DE824-4FBB-4324-8AA0-1C62BFAB2ACB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
