@@ -4,16 +4,24 @@ using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace RoadLamps.Hosting
 {
     class MyClient
     {
         TcpClient m_tcpClient;
+        Form1 _form;
 
         public MyClient(TcpClient tc)
         {
             m_tcpClient = tc;
+        }
+
+        public MyClient(TcpClient tc, Form1 form)
+            : this(tc)
+        {
+            _form = form;
         }
 
         public void Communicate()
@@ -23,35 +31,56 @@ namespace RoadLamps.Hosting
             string mess;
             while (true)
             {
+                string msg = string.Empty;
                 byte[] bytes = new byte[1024];
                 try
                 {
                     if ((recv = ns.Read(bytes, 0, 1024)) == 0)
                     {
-                        Console.WriteLine("disconnected");
+                        //Console.WriteLine("disconnected");
+                        msg = "disconnected";
                         break;
                     }
                 }
                 catch
                 {
-                    Console.WriteLine("missing");
+                    //Console.WriteLine("missing");
+                    msg = "missing";
                     break;
                 }
                 mess = System.Text.Encoding.ASCII.GetString(bytes, 0, recv);
-                Console.WriteLine(m_tcpClient.Client.AddressFamily.ToString() + "::" + mess);
-                bytes = System.Text.Encoding.ASCII.GetBytes(mess.ToUpper());
-                try
+                //Console.WriteLine(m_tcpClient.Client.AddressFamily.ToString() + "::" + mess);
+                msg = m_tcpClient.Client.AddressFamily.ToString() + "::" + mess;
+                IEnumerable<ListView> lvs = GetAllControls<ListView>(_form);
+                ListView lvobj = lvs.Where(c => c.Name.Equals("listListeningResult")).FirstOrDefault();
+                if (lvobj != null)
                 {
-                    ns.Write(bytes, 0, bytes.Length);
+                    lvobj.Items.Add(new ListViewItem(msg));
                 }
-                catch
-                {
-                    Console.WriteLine("missing");
-                    break;
-                }
+
+
+                //bytes = System.Text.Encoding.ASCII.GetBytes(mess.ToUpper());
+                //try
+                //{
+                //    ns.Write(bytes, 0, bytes.Length);
+                //}
+                //catch
+                //{
+                //    Console.WriteLine("missing");
+                //    break;
+                //}
             }
             ns.Close();
             m_tcpClient.Close();
         }
-    }  
+
+        public IEnumerable<T> GetAllControls<T>(Control control) where T : Control
+        {
+            var controls = control.Controls.Cast<T>();
+
+            return controls.SelectMany(ctrl => GetAllControls<T>(ctrl))
+                                      .Concat(controls)
+                                      .Where(c => c.GetType() == typeof(T));
+        }
+    }
 }

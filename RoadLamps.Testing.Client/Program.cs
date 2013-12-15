@@ -14,7 +14,7 @@ namespace RoadLamps.Testing.Client
         static void Main(string[] args)
         {
             TcpClient tcpClient = new TcpClient();
-            tcpClient.Connect(IPAddress.Parse("127.0.0.1"), 13000);
+            tcpClient.Connect(IPAddress.Parse("127.0.0.1"), 13001);
             NetworkStream ns = tcpClient.GetStream();
             char b = 'a';
             byte[] bytes = new byte[1024];
