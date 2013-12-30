@@ -33,6 +33,7 @@
             this.toolStripStatusTcpListener = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnTCPListening = new System.Windows.Forms.Button();
             this.lvListeningResult = new System.Windows.Forms.ListView();
+            this.客户端信息 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,11 +72,20 @@
             // 
             // lvListeningResult
             // 
-            this.lvListeningResult.Location = new System.Drawing.Point(13, 33);
+            this.lvListeningResult.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.客户端信息});
+            this.lvListeningResult.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lvListeningResult.GridLines = true;
+            this.lvListeningResult.Location = new System.Drawing.Point(0, 47);
             this.lvListeningResult.Name = "lvListeningResult";
-            this.lvListeningResult.Size = new System.Drawing.Size(193, 203);
+            this.lvListeningResult.Size = new System.Drawing.Size(435, 203);
             this.lvListeningResult.TabIndex = 2;
             this.lvListeningResult.UseCompatibleStateImageBehavior = false;
+            // 
+            // 客户端信息
+            // 
+            this.客户端信息.Text = "客户端信息";
+            this.客户端信息.Width = 500;
             // 
             // Form1
             // 
@@ -103,6 +113,7 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusTcpListener;
         private System.Windows.Forms.Button btnTCPListening;
         private System.Windows.Forms.ListView lvListeningResult;
+        private System.Windows.Forms.ColumnHeader 客户端信息;
     }
 }
 

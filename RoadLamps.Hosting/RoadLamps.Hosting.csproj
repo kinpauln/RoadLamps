@@ -85,6 +85,10 @@
       <Project>{9816a1e5-550e-4af1-89ac-04c92e92048f}</Project>
       <Name>RoadLamps.Contract</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RoadLamps.Core\RoadLamps.Core.csproj">
+      <Project>{3aec9003-e4be-4627-91f2-5226970ee79d}</Project>
+      <Name>RoadLamps.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RoadLamps.Service\RoadLamps.Service.csproj">
       <Project>{d1e4d714-a9ce-46db-b440-ba6c8b8d6e3a}</Project>
       <Name>RoadLamps.Service</Name>

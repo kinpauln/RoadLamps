@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RoadLamps.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
@@ -49,10 +50,12 @@ namespace RoadLamps.Hosting
                     break;
                 }
                 mess = System.Text.Encoding.ASCII.GetString(bytes, 0, recv);
-                //Console.WriteLine(m_tcpClient.Client.AddressFamily.ToString() + "::" + mess);
+                string ipaddress = Remote.GetRemoteIP(m_tcpClient);
+                int port = Remote.GetRemotePort(m_tcpClient);
                 msg = m_tcpClient.Client.AddressFamily.ToString() + "::" + mess;
-                IEnumerable<ListView> lvs = GetAllControls<ListView>(_form);
-                //ListView lvobj = lvs.Where(c => c.Name.Equals("lvListeningResult")).FirstOrDefault();
+                msg = string.Format("{0}:{1}-----{2}",ipaddress, port, mess);
+
+                //IEnumerable<ListView> lvs = GetAllControls<ListView>(_form);
                 ListView lvobj = (ListView)_form.Controls.Cast<Control>().Where(c => c.Name.Equals("lvListeningResult")).FirstOrDefault();
 
                 lvobj.Invoke(new Action(() =>

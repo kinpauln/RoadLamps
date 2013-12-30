@@ -39,6 +39,21 @@ namespace RoadLamps.Hosting
             _thListener.IsBackground = true;
             _thListener.Start();
             toolStripStatusTcpListener.Text = "Listening Started";
+
+
+            //更改属性
+            this.lvListeningResult.GridLines = true; //显示表格线
+            this.lvListeningResult.View = View.Details;//显示表格细节
+            this.lvListeningResult.LabelEdit = true; //是否可编辑,ListView只可编辑第一列。
+            this.lvListeningResult.Scrollable = true;//有滚动条
+            this.lvListeningResult.HeaderStyle = ColumnHeaderStyle.Clickable;//对表头进行设置
+            this.lvListeningResult.FullRowSelect = true;//是否可以选择行
+
+            //this.listView1.HotTracking = true;// 当选择此属性时则HoverSelection自动为true和Activation属性为oneClick
+            //this.listView1.HoverSelection = true;
+            //this.listView1.Activation = ItemActivation.Standard;
+            //添加表头
+            //this.lvListeningResult.Columns.Add("客户端响应", 300);
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
