@@ -26,7 +26,7 @@ namespace RoadLamps.Hosting
         private ServiceHost _servicehost = null;
         private void Form1_Load(object sender, EventArgs e)
         {
-            //HostRoadLampsService();
+            HostRoadLampsService();
 
             TcpServerListen();
             toolStripStatusTcpListener.Text = "Listening Started";
@@ -47,6 +47,7 @@ namespace RoadLamps.Hosting
                 TcpClient tcpClient = tcpListener.AcceptTcpClient();
                 MyClient newClient = new MyClient(tcpClient, this);
                 Thread t = new Thread(new ThreadStart(newClient.Communicate));
+                t.IsBackground = true;
                 t.Start();
             }  
         }
