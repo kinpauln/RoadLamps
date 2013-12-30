@@ -51,6 +51,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RoadLamps.Contract\RoadLamps.Contract.csproj">
+      <Project>{9816a1e5-550e-4af1-89ac-04c92e92048f}</Project>
+      <Name>RoadLamps.Contract</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RoadLamps.Service.Old\RoadLamps.Service.Old.csproj">
       <Project>{4745dae8-a8ca-4583-bfbd-482013bdefd9}</Project>
       <Name>RoadLamps.Service.Old</Name>

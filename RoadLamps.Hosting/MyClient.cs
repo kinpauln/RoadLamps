@@ -52,12 +52,13 @@ namespace RoadLamps.Hosting
                 //Console.WriteLine(m_tcpClient.Client.AddressFamily.ToString() + "::" + mess);
                 msg = m_tcpClient.Client.AddressFamily.ToString() + "::" + mess;
                 IEnumerable<ListView> lvs = GetAllControls<ListView>(_form);
-                ListView lvobj = lvs.Where(c => c.Name.Equals("listListeningResult")).FirstOrDefault();
-                if (lvobj != null)
+                //ListView lvobj = lvs.Where(c => c.Name.Equals("lvListeningResult")).FirstOrDefault();
+                ListView lvobj = (ListView)_form.Controls.Cast<Control>().Where(c => c.Name.Equals("lvListeningResult")).FirstOrDefault();
+
+                lvobj.Invoke(new Action(() =>
                 {
                     lvobj.Items.Add(new ListViewItem(msg));
-                }
-
+                }));
 
                 //bytes = System.Text.Encoding.ASCII.GetBytes(mess.ToUpper());
                 //try
@@ -74,9 +75,9 @@ namespace RoadLamps.Hosting
             m_tcpClient.Close();
         }
 
-        public IEnumerable<T> GetAllControls<T>(Control control) where T : Control
+        public IEnumerable<T> GetAllControls<T>(Control container) where T : Control
         {
-            var controls = control.Controls.Cast<T>();
+            var controls = container.Controls.Cast<T>();
 
             return controls.SelectMany(ctrl => GetAllControls<T>(ctrl))
                                       .Concat(controls)

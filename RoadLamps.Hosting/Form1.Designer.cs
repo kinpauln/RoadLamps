@@ -41,7 +41,7 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusHosting,
             this.toolStripStatusTcpListener});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 229);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 250);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(435, 22);
             this.statusStrip1.TabIndex = 0;
@@ -50,20 +50,20 @@
             // toolStripStatusHosting
             // 
             this.toolStripStatusHosting.Name = "toolStripStatusHosting";
-            this.toolStripStatusHosting.Size = new System.Drawing.Size(92, 17);
+            this.toolStripStatusHosting.Size = new System.Drawing.Size(84, 17);
             this.toolStripStatusHosting.Text = "Hosting Status";
             // 
             // toolStripStatusTcpListener
             // 
             this.toolStripStatusTcpListener.Name = "toolStripStatusTcpListener";
-            this.toolStripStatusTcpListener.Size = new System.Drawing.Size(79, 17);
+            this.toolStripStatusTcpListener.Size = new System.Drawing.Size(73, 17);
             this.toolStripStatusTcpListener.Text = "TCP Listener";
             // 
             // btnTCPListening
             // 
             this.btnTCPListening.Location = new System.Drawing.Point(13, 1);
             this.btnTCPListening.Name = "btnTCPListening";
-            this.btnTCPListening.Size = new System.Drawing.Size(147, 23);
+            this.btnTCPListening.Size = new System.Drawing.Size(147, 25);
             this.btnTCPListening.TabIndex = 1;
             this.btnTCPListening.Text = "Stop TCP Listening";
             this.btnTCPListening.UseVisualStyleBackColor = true;
@@ -71,17 +71,17 @@
             // 
             // lvListeningResult
             // 
-            this.lvListeningResult.Location = new System.Drawing.Point(13, 30);
+            this.lvListeningResult.Location = new System.Drawing.Point(13, 33);
             this.lvListeningResult.Name = "lvListeningResult";
-            this.lvListeningResult.Size = new System.Drawing.Size(193, 188);
+            this.lvListeningResult.Size = new System.Drawing.Size(193, 203);
             this.lvListeningResult.TabIndex = 2;
             this.lvListeningResult.UseCompatibleStateImageBehavior = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(435, 251);
+            this.ClientSize = new System.Drawing.Size(435, 272);
             this.Controls.Add(this.lvListeningResult);
             this.Controls.Add(this.btnTCPListening);
             this.Controls.Add(this.statusStrip1);
